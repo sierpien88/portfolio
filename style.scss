@@ -1,0 +1,274 @@
+@mixin social($deg){
+  -ms-transform: skewX($deg); /* IE 9 */
+    -webkit-transform: skewX($deg); /* Safari */
+    transform: skewX($deg);
+    
+}
+
+body{
+		font-family: 'Roboto Condensed', sans-serif;
+		background-color: #DEDEDE;
+    
+} 
+
+.affix {
+      top: 0;
+//      width: 100%;
+      z-index: 999;
+    padding: 0;
+  }
+.navbar-header{
+    padding: 0;
+}
+.navbar {
+    padding:0;
+    margin: 0;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+#myNavbar a{
+    color: #000;
+    &:hover{
+        color: #fff;
+    }
+}
+.navbar-inverse .navbar-toggle{
+    border-color: #34adb8;
+   
+}
+
+nav{
+        
+@include social(-10deg);
+    display: none;
+    >button{
+        @include social(-10deg);
+    }
+}
+
+.nav, .navbar-inverse, .navbar-collapse, .navbar-inverse, .navbar-form, .navbar-header, navbar navbar-inverse, .navbar-toggle{
+    background: #34adb8;
+    color: #fff;
+    border-color: #34adb8;
+    z-index: 999;
+    font-size: 22px;
+    >a{
+        color:#fff;
+    }
+}
+nav .navbar .navbar-inverse{
+    padding: 0;
+}
+section{
+	background-color: #ffffff;
+}
+
+#about{
+	font-size: 22px;
+	text-align: justify;
+	font-weight: bold;
+}
+
+#me{
+
+	width:300px;
+	height: 80%;
+    margin:{
+        top: -30%;
+        left: 2%;
+    
+    } 
+    
+	}
+
+@media only screen and (max-width: 990px){
+	#me{
+		display:none;
+	}
+}
+#carousel-web{
+    display:none;
+}
+
+@media only screen and (max-width: 990px){
+	#carousel-web{
+		display:block;
+        margin:{
+           top: 30px; 
+            bottom: 30px;
+    }
+	}
+    .portfolio-computer{
+        display:none;
+
+        }
+}
+
+
+.portfolio-computer {
+    img{
+        width: 400px;
+        height: 200px;
+    }
+    margin:{
+       top: 30px; 
+        bottom: 30px;
+    }
+    a{
+        text-decoration:none;
+        color: #666666;
+         width: 200px;
+        height: 200px;
+        
+        &:hover{
+            color: #000;
+        }
+        
+}
+}
+#grey_container {
+    height:100px;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    width: 400px;;
+    height: 200px;
+}
+
+.carousel-inner>.item>a>img{
+    width: 800px;
+    height: 400px;
+}
+
+
+
+.carousel-caption {
+
+    width:100%;
+    margin:0;
+    padding-top: 2px;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+}
+.carousel-caption > h3{
+    opacity: 1;
+    color: #fff;
+  
+}
+
+//Social icons in Projects
+.socialIcons {
+    list-style-type: none;
+    display:none;
+    margin:{
+        top: 40px;
+    } 
+    >li{
+        @include social(-20deg);
+        transition: width 2s, height 4s;
+        color: #000000;
+        background-color: #34adb8;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 3%;
+            >a{
+            color: #000;
+            &:hover{ 
+                color:#ffffff;
+                text-decoration: none;
+                    }  
+              } 
+        }
+    }
+
+
+/*contact form */
+/* Background pattern from Subtle Patterns */	
+#contact{
+	background-image: url("img/footer_lodyas.png");
+	text-align: center;
+    margin:{
+        top:20px;
+        left:0;
+        right:0;
+//        bottom: 20px;
+    }
+    padding: 0;
+}
+
+.width_contact {
+    padding-right: 0px !important;
+    padding-left: 0px;
+}
+
+.box{
+	width: 70%;
+	height: 100px;
+	margin: 10px 10px 10px 10px;
+	outline: none;
+
+}
+.box:focus{
+	-webkit-box-shadow:  0px 0px 10px 2px #ffffff;
+	-moz-box-shadow: 0px 0px 10px 2px #ffffff;
+	box-shadow: 0px 0px 10px 2px #ffffff;
+}
+.nameAndEmail{
+	margin: 10px;
+	width: 70%;
+	outline: none;
+
+}
+.nameAndEmail:focus{
+	-webkit-box-shadow:  0px 0px 10px 2px #ffffff;
+	-moz-box-shadow: 0px 0px 10px 2px #ffffff;
+	box-shadow: 0px 0px 10px 2px #ffffff;
+}
+.sub{
+	width: 200px;
+	height:30px; 
+	background-color: #34adb8;
+	border: 0; 
+	cursor: pointer;
+	outline: none;
+	margin: 20px;
+	font-size: 22px;
+    &:hover{
+    background-color: #13787f;
+    }
+
+}
+/*footer*/
+footer{
+    
+    .container{
+        margin: auto;
+        text-align: center;
+    }
+	
+}
+
+#h1_contactform {
+    background-color: #34adb8;
+    margin-top: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+
+#projects{
+    margin-bottom: 80px;
+    background: #DEDEDE;
+}
+
+
+span {
+    font-size: 18px;
+    margin-left: 30px;
+}

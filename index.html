@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title> Portfolio - Agata Stępnik</title>
+    
+    <!-- Favicon Icon -->
+    <link rel="Shortcut icon" href="img/favicon.png"/>
+        
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="fontello.css">      
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+
+<body>
+<!--   NAVIGATION START -->
+<header>
+<div class="container">
+        <h1>Portfolio Agata Stępnik</h1>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+    </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="font-color"><a href="#about" class="scroll1">About me</a></li>
+          <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+          <li><a href="cvagatastepnik.pdf" target="_blank" class="scroll">CV</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+</div>   
+    <div id="grey_container"></div>  
+</header>
+<!--  NAVIGATION END  -->
+<!--  MAIN START  -->
+<!--  ABOUT ME START  -->
+<main>
+    <section>
+        <div class="container-fluid">
+           <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-ms-12">
+                   <h1>About me</h1>
+                      <div id="about">
+                      My name is Agata and few months ago I made up my mind to pursue my career as programmist. Initially I've started with C++, however I've quite quickly discovered that I find front end languages more appealing. At the moment I spend my time learning HTML5, CSS3, JS, jQuery and Bootramp while using graphic tools like GIMP and InkScape as well. I consider myself to be an open-minded optimist trying to focus solely on a bright side of life.
+                      </div>  
+                </div>
+                <div class="col-md-4 col-ms-12">
+                   <img class="img-responsive" id="me" src="img/profilowe.png"> 
+                </div>    
+              </div>
+            </div>
+        </div>
+    </section>
+<!--  ABOUT ME END  -->  
+<!--  PORTFOLIO START  -->
+<section id="portfolio">
+        <div class="container-fluid">
+           <div class="container">
+             <h1>Portfolio</h1>
+<!--             PORTFOLIO DISPLAY COMPUTER START   -->
+
+<div class="container-fluid">
+    <div class="container portfolio-computer">
+       <div class="portfolio-computer">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="http://konduktometry.com.pl/" target="_blank"><img class="img-responsive" src="img/konduktometry.png"  alt="One page webside">
+            <h3>Full responsive(Bootstrap) one page webside </h3>
+                 </a>
+            </div>
+            <div class="col-md-4">
+                <a href="http://stepnikagata.5v.pl/" target="_blank"><img 
+               class="img-responsive" src="img/portfolio1.png" alt="Portfolio webside in polish language">
+  
+          <h3>My first portfolio webside in polish language</h3>
+
+                </a> 
+            </div>
+            <div class="col-md-4">
+                <a href="http://stepco24.pl/" target="_blank"><img class="img-responsive" src="img/stepco24.png" alt="Wordpress webside">
+                
+          <h3>Wordpress webside with Woocomerce</h3>
+                 </a>
+            </div>
+        </div>
+    
+        </div> 
+</div>             
+                
+ <!--   PORTFOLIO DISPLAY COMPUTER END    -->            
+<!--    CAROUSEL WEBSIDES           -->
+ <div id="carousel-web">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <a href="http://konduktometry.com.pl/" target="_blank"><img src="img/konduktometry.png" alt="One page webside">
+        <div class="carousel-caption">
+          <h3>Full responsive(Bootstrap) one page webside </h3>
+
+        </div>
+        </a>
+      </div>
+
+      <div class="item">
+         <a href="http://stepnikagata.5v.pl/" target="_blank"><img src="img/portfolio1.png" alt="Portfolio webside in polish language">
+        <div class="carousel-caption">
+          <h3>My first portfolio webside in polish language</h3>
+
+        </div>
+        </a>
+      </div>
+    
+      <div class="item">
+        <a href="http://stepco24.pl/" target="_blank"><img src="img/stepco24.png" alt="Wordpress webside">
+        <div class="carousel-caption">
+          <h3>Wordpress webside with Woocomerce</h3>
+
+        </div>
+        </a>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+       </div>
+        </div>   
+    </section>   
+
+<!--  PORTFOLIO END  -->
+<section id="projects">
+ <div class="container-fluid">
+     <div class="container">
+         <div class="row">
+            <h2>Projects</h2>
+             <div class="col-md-7 col-ms-12">
+             
+<!--  CAROUSEL PROJECTS START   -->
+                 
+                  <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel2" data-slide-to="1"></li>
+                      <li data-target="#myCarousel2" data-slide-to="2"></li>
+                      <li data-target="#myCarousel2" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                      <div class="item active">
+                        <a href="https://codepen.io/sierpien/pen/rzPzaE" target="_blank"><img src="img/hangman.png" alt="Hangman game (jQuey)">
+                        <div class="carousel-caption">
+                          <h3>Hangman game (jQuey)</h3>
+                        </div>
+                        </a>
+                      </div>
+
+                      <div class="item">
+                         <a href="https://codepen.io/sierpien/pen/RZyXmp" target="_blank"><img src="img/calculator.png" alt="Calculator (JavaScript)">
+                        <div class="carousel-caption">
+                          <h3>Calculator (JavaScript)</h3>
+                        </div>
+                        </a>
+                      </div>
+
+                      <div class="item">
+                        <a href="https://codepen.io/sierpien/pen/OjOqPp" target="_blank"><img src="img/game.png" alt="Game - find number (JavaScript)">
+                        <div class="carousel-caption">
+                          <h3>Game - find number (JavaScript)</h3>
+                        </div>
+                        </a>
+                      </div>
+                      
+                      <div class="item">
+                        <a href="https://codepen.io/sierpien/pen/vJGEVw" target="_blank"><img src="img/shoppingList.png" alt="Shopping list (JavaScript)">
+                        <div class="carousel-caption">
+                          <h3>Shopping list (JavaScript)</h3>
+                        </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+        </div>
+<!--  CAROUSEL PROJECTS END   -->     
+<!--  LINKS SECTION START   -->       
+             <div class="col-md-5 col-ms-12">
+                 
+            <ol class="socialIcons">
+			<!-- <li> -->
+				<!-- <a class="social" href="https://web.facebook.com/agata.stepnik.1" target="_blank"> -->
+				<!-- <i class="icon-facebook-squared"></i> -->
+				<!-- </a> -->
+			<!-- </li> -->
+			<li>
+				<a href="https://www.linkedin.com/in/agata-st%C4%99pnik-361734143/" target="_blank">
+				<i class="icon-linkedin"></i>
+				<span>Linkedin</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/sierpien88" target="_blank">
+				<i class="icon-github-circled-alt"></i>
+				<span>GitHub</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://codepen.io/sierpien" target="_blank">
+				<i class="icon-codeopen"></i>
+				<span>CodePen</span>
+				</a>
+			</li>
+			<li>
+				<a href="cvagatastepnik.pdf" target="_blank">
+				<i class="icon-doc-text-inv"></i>
+				<span>My Curiculum Vitae</span>
+				</a>
+			</li>
+			<li>
+				<a href="mailto: stepnikagata@gmial" target="_blank">
+				<i class="icon-mail-alt"></i>
+				<span>stepnikagata@gmail.com</span>
+				</a>
+			</li>
+		</ol>
+                 
+             </div>
+<!--  LINKS SECTION END   -->                  
+         </div>
+     </div>
+ </div>   
+</section>
+</main>
+<!-- MAIN END -->
+<!-- CONTACT FORM START -->
+<div id="contact">         
+    <div class="container-fluid">
+        <h1 id="h1_contactform">Contact me</h1>
+            <div class="container">
+			    <form action="kontakt.php" method="post">	
+				    <fieldset>
+                        <div><input class="nameAndEmail" name="name" type="text" placeholder="Your name" onfocus="this.placeholder=''" onblur="this.placeholder='name'"/>
+                        <input class="nameAndEmail" name="email" type="email" required="required" placeholder="Your email" onfocus="this.placeholder=''" onblur="this.placeholder='email'"/></div>
+                        <div><textarea class="box" name="message" required="required" placeholder="Your message" onfocus="this.placeholder=''" onblur="this.placeholder='Your message'"></textarea></div>
+                        <div><input type="submit" class="sub" value="Send me" name="submit"/></div>
+                    </fieldset>
+			    </form>
+            </div>	
+    </div>
+</div>
+<!--  CONTACT FORM END  -->
+<!--  FOOTER AREA START  -->
+	<footer>
+            <div class="container">
+		stepnikagata@gmial.com (+48 503 665 490) &copy; <a href="mailto: stepnikagata@gmial">Agata Stepnik</a> 2017. All Rights Reserved.
+             </div>
+    </footer>
+<!--  FOOTER AREA END  -->
+<script src="main.js"></script>    
+</body>
+</html>
