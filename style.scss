@@ -15,14 +15,11 @@ body{
       top: 0;
 //      width: 100%;
       z-index: 999;
-    padding: 0;
   }
-.navbar-header{
-    padding: 0;
-}
+
 .navbar {
-    padding:0;
-    margin: 0;
+    border: none;
+    min-height: auto;
 }
 .container-fluid{
     margin: 0;
@@ -36,6 +33,7 @@ body{
 }
 .navbar-inverse .navbar-toggle{
     border-color: #34adb8;
+    padding: 0;
    
 }
 
@@ -50,6 +48,8 @@ nav{
 
 .nav, .navbar-inverse, .navbar-collapse, .navbar-inverse, .navbar-form, .navbar-header, navbar navbar-inverse, .navbar-toggle{
     background: #34adb8;
+    border-radius: 3%;
+    padding: 0;
     color: #fff;
     border-color: #34adb8;
     z-index: 999;
@@ -271,4 +271,8 @@ footer{
 span {
     font-size: 18px;
     margin-left: 30px;
+}
+
+#margin {
+    margin-bottom: 30px;
 }
